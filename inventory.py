@@ -45,7 +45,7 @@ def list_items(filepath=DEFAULT_DB_FILE):
     if not items:
         return "ยังไม่มีสินค้าในระบบ"
 
-    lines = ["=== รายการสินค้าในสต็อก ==="]
+    lines = [f"=== รายการสินค้าในสต็อก (ทั้งหมด {len(items)} รายการ) ==="]
     for item in items:
         code = item.get("code", "")
         name = item.get("name", "")
