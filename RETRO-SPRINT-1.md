@@ -1,0 +1,41 @@
+# Sprint Retrospective: Sprint 1
+
+## Velocity
+- Story point ที่วางแผน: 16
+- Story point ที่ทำสำเร็จ (Done): 16
+- Velocity Sprint 1: 16 points
+
+| User Story | Story Points | สถานะ | หมายเหตุ |
+|---|---|---|---|
+| US-01 แสดงรายการสินค้าทั้งหมด | 3 | Done | ผ่าน AC-1, AC-2 |
+| US-02 เพิ่มสินค้าใหม่เข้าระบบ | 3 | Done | ผ่าน AC-1, AC-2 |
+| US-03 แก้ไข/ปรับปรุงจำนวนสินค้า | 3 | Done | ผ่าน AC-1, AC-2 |
+| US-04 ค้นหาสินค้าด้วยชื่อหรือรหัส | 3 | Done | ผ่าน AC-1, AC-2 |
+| US-05 ส่งออกรายงานสต็อกเป็น CSV | 4 | Done | ผ่าน AC-1, AC-2 |
+
+## เพดานงานที่ทำพร้อมกัน (WIP limit)
+- เพดานที่ตั้งไว้ใน TEAM_CHARTER.md: 2 ใบ
+- ชนเพดานกี่ครั้งใน sprint นี้: 0 ครั้ง
+- เพดานที่จะใช้ใน sprint หน้า: 2 ใบ เพราะ ทำงานเดี่ยว การโฟกัสทีละ 1-2 งานช่วยให้ทำเสร็จเร็วและลด context switching
+
+## Start: สิ่งที่ควรเริ่มทำในรอบต่อไป (อย่างน้อย 2 ข้อ พร้อมเหตุผล)
+- เริ่มเขียน Automated CI/CD workflow (GitHub Actions) เพื่อรัน Unit Test ทุกครั้งที่มีการเปิด PR
+- เริ่มเพิ่ม Data Validation เพิ่มเติม เช่น ตรวจสอบรูปแบบรหัสสินค้าให้เป็นมาตรฐานเดียวกัน
+
+## Stop: สิ่งที่ควรหยุดทำ (อย่างน้อย 2 ข้อ พร้อมตัวอย่างที่เกิดจริงใน sprint นี้)
+- หยุดการแก้โค้ดโดยไม่เขียนหรือรัน unit test กำกับก่อน
+- หยุดการสะสมโค้ดไว้ commit ครั้งเดียว โดยเปลี่ยนเป็น commit บ่อย ๆ ตามแต่ละ feature
+
+## Continue: สิ่งที่ทำได้ดี ควรทำต่อ (อย่างน้อย 2 ข้อ)
+- รักษาการปฏิบัติตาม Acceptance Criteria ครบทุกข้อ ก่อนที่จะถือว่างานชิ้นนั้น "Done"
+- ใช้ Unit test ครอบคลุมทั้ง Positive และ Negative/Edge cases
+
+## AI Commit Audit
+PR ไหนที่ commit message จาก AI ต้องแก้มากที่สุด เพราะอะไร:
+- PR #2 (feat/us-02-add-item): draft ของ AI ไม่ได้ระบุถึง validation กรณีรหัสสินค้าซ้ำ จึงได้ปรับแก้ข้อความ commit ให้ระบุครอบคลุมเหตุผลและ logic ชัดเจนขึ้น
+
+## Action Item สำหรับ Sprint ถัดไป (1-2 ข้อ พร้อมชื่อคนรับผิดชอบ)
+| Action | เจ้าของ |
+|---|---|
+| ติดตั้ง GitHub Actions เพื่อรัน `test_inventory.py` อัตโนมัติ | Phumiphat |
+| พัฒนาส่วน Web Interface หรือ Rich CLI (ถ้าต้องการต่อยอด) | Phumiphat |
