@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+test_inventory.json
+test_export.csv
+stock.csv
