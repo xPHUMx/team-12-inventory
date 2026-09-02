@@ -37,5 +37,5 @@ PR ไหนที่ commit message จาก AI ต้องแก้มาก
 ## Action Item สำหรับ Sprint ถัดไป (1-2 ข้อ พร้อมชื่อคนรับผิดชอบ)
 | Action | เจ้าของ |
 |---|---|
-| ติดตั้ง GitHub Actions เพื่อรัน `test_inventory.py` อัตโนมัติ | Phumiphat |
-| พัฒนาส่วน Web Interface หรือ Rich CLI (ถ้าต้องการต่อยอด) | Phumiphat |
+| ติดตั้ง GitHub Actions เพื่อรัน `test_inventory.py` อัตโนมัติ | เกียรติภูมิ หารศรีนาถ (64332110242-2) |
+| พัฒนาส่วน Web Interface หรือ Rich CLI (ถ้าต้องการต่อยอด) | เกียรติภูมิ หารศรีนาถ (64332110242-2) |

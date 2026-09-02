@@ -4,7 +4,7 @@
 
 | ชื่อ | GitHub Username | บทบาท |
 |---|---|---|
-| Phumiphat (Solo Developer) | xPHUMx | Product Owner / Scrum Master / Developer |
+| เกียรติภูมิ หารศรีนาถ (64332110242-2) | xPHUMx | Product Owner / Scrum Master / Developer |
 
 ## Branching Strategy
 
