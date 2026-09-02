@@ -95,7 +95,12 @@ def adjust_quantity(code, delta, filepath=DEFAULT_DB_FILE):
     AC-1: อัปเดตยอดคงเหลือและบันทึกทันที
     AC-2: ถ้าจ่ายออกมากกว่าคงเหลือ แสดง "จำนวนคงเหลือไม่พอ"
     """
-    code = str(code).strip()
+    try:
+        delta_val = int(delta)
+    except (ValueError, TypeError):
+        return False, "จำนวนที่ต้องการปรับต้องเป็นตัวเลขจำนวนเต็ม"
+
+    code = str(code).strip().upper()
     items = load_items(filepath)
 
     found = False
@@ -103,12 +108,13 @@ def adjust_quantity(code, delta, filepath=DEFAULT_DB_FILE):
         if item.get("code") == code:
             found = True
             current_qty = item.get("quantity", 0)
-            new_qty = current_qty + delta
+            new_qty = current_qty + delta_val
             if new_qty < 0:
                 return False, "จำนวนคงเหลือไม่พอ"
             item["quantity"] = new_qty
             save_items(items, filepath)
-            return True, f"อัปเดตสต็อกรหัส {code} สำเร็จ: ยอดคงเหลือใหม่คือ {new_qty}"
+            action = "รับเข้า" if delta_val >= 0 else "จ่ายออก"
+            return True, f"อัปเดตสต็อกรหัส {code} ({item.get('name')}) สำเร็จ: {action} {abs(delta_val)} ชิ้น -> คงเหลือ {new_qty} ชิ้น"
 
     if not found:
         return False, f"ไม่พบสินค้ารหัส {code}"
