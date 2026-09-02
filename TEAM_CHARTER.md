@@ -4,7 +4,7 @@
 
 | ชื่อ | GitHub Username | บทบาท |
 |---|---|---|
-| Phumiphat (Solo Developer) | (รอระบุ) | Product Owner / Scrum Master / Developer |
+| Phumiphat (Solo Developer) | xPHUMx | Product Owner / Scrum Master / Developer |
 
 ## Branching Strategy
 
