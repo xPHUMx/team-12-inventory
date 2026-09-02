@@ -60,10 +60,15 @@ def add_item(code, name, quantity, filepath=DEFAULT_DB_FILE):
     AC-1: บันทึกสินค้าใหม่ (จำนวนเริ่มต้น >= 0)
     AC-2: ถ้ามีสินค้ารหัสนี้อยู่แล้ว แสดง "รหัสสินค้าซ้ำ" โดยไม่เขียนทับ
     """
-    if quantity < 0:
+    try:
+        qty = int(quantity)
+    except (ValueError, TypeError):
+        return False, "จำนวนสินค้าต้องเป็นตัวเลขจำนวนเต็ม"
+
+    if qty < 0:
         return False, "จำนวนสินค้าเริ่มต้นต้องไม่ติดลบ"
 
-    code = str(code).strip()
+    code = str(code).strip().upper()
     name = str(name).strip()
 
     if not code or not name:
@@ -77,11 +82,11 @@ def add_item(code, name, quantity, filepath=DEFAULT_DB_FILE):
     new_item = {
         "code": code,
         "name": name,
-        "quantity": int(quantity)
+        "quantity": qty
     }
     items.append(new_item)
     save_items(items, filepath)
-    return True, f"เพิ่มสินค้าสำเร็จ: {code} - {name} ({quantity} ชิ้น)"
+    return True, f"เพิ่มสินค้าสำเร็จ: [{code}] {name} (จำนวน: {qty} ชิ้น)"
 
 
 def adjust_quantity(code, delta, filepath=DEFAULT_DB_FILE):
