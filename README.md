@@ -46,5 +46,27 @@ python inventory.py export stock_report.csv
 
 ### การทดสอบ Unit Test
 ```bash
-python -m unittest test_inventory.py
+# ทดสอบฟังก์ชันของ Lab 2
+py -m unittest test_inventory.py
+
+# ทดสอบฟังก์ชันของ Lab 3 (Spec-Driven Development & SOLID & Observer Pattern)
+py -m unittest test_service.py
+
+# ทดสอบ Unit Test ทั้งหมดในโปรเจกต์
+py -m unittest discover -v
 ```
+
+---
+
+## 🏛️ Lab 3: Spec-Driven Development (SDD) & Context Engineering
+
+### โครงสร้างไฟล์ของ Lab 3:
+- **`specs/spec.md`**: เอกสารข้อกำหนด (User Stories, Acceptance Criteria แบบ Given-When-Then, FR, NFR)
+- **`.ai-rules.md`**: ไฟล์ Context / Rules สำหรับ AI ควบคุมคุณภาพสถาปัตยกรรม (SOLID, Type Hints, Observer, Factory)
+- **`src/models.py`**: Domain Entities (`Product`, `Category`, `StockTransaction`)
+- **`src/notifiers.py`**: Notifier Protocol, `EmailNotifier`, `SMSNotifier`, และ `NotifierFactory`
+- **`src/service.py`**: `InventoryService` (Subject ใน Observer Pattern จัดการ Business Logic รับ/จ่าย และคำนวณ Valuation)
+- **`src/inventory_no_context.py`**: โค้ดตัวอย่างก่อนมี Context เพื่อเปรียบเทียบสถาปัตยกรรม
+- **`AI_ITERATION_LOG.md`**: บันทึกการเปรียบเทียบและรอบการ Iterate ปรับปรุง Spec/Context
+- **`diagrams/`**: Mermaid Class Diagram (`class.md`) และ Sequence Diagram (`sequence.md`)
+- **`design_review.md`**: ตารางประเมิน SOLID Design Review 5 ข้อ
