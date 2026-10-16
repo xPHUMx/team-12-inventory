@@ -1,0 +1,111 @@
+<mxfile host="app.diagrams.net" modified="2026-10-16T12:00:00.000Z" agent="Mozilla/5.0" version="21.0.0" type="device">
+  <diagram id="mockup-dashboard" name="Dashboard & Add Product Mockups">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- SCREEN 1: DASHBOARD -->
+        <mxCell id="dash_frame" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="700" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="dash_nav" value="  Team 12 Inventory   |   Dashboard   |   Inventory Items   |   👤 น้าศักดิ์ (พนักงานคลัง)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1E40AF;fontColor=#FFFFFF;fontStyle=1;align=left;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="700" height="40" as="geometry" />
+        </mxCell>
+        <!-- Stat Cards -->
+        <mxCell id="card_all" value="สินค้าทั้งหมด&lt;br&gt;&lt;b&gt;148 รายการ&lt;/b&gt;&lt;br&gt;&lt;font color='#4B5563'&gt;📦 กายภาพ: 120 | 💾 ดิจิทัล: 28&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3F4F6;strokeColor=#D1D5DB;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="60" y="100" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="card_low" value="สต็อกต่ำกว่าเกณฑ์&lt;br&gt;&lt;b&gt;&lt;font color='#B45309'&gt;⚠️ 3 รายการ (ต้องสั่งเพิ่ม)&lt;/font&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FEF3C7;strokeColor=#B45309;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="290" y="100" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="card_val" value="มูลค่าสต็อกรวม&lt;br&gt;&lt;b&gt;185,400.00 บาท&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DCFCE7;strokeColor=#15803D;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="520" y="100" width="200" height="70" as="geometry" />
+        </mxCell>
+        <!-- Actions & Table -->
+        <mxCell id="dash_search" value=" 🔍 ค้นหารหัสหรือชื่อสินค้า..." style="rounded=1;whiteSpace=wrap;html=1;align=left;strokeColor=#9CA3AF;fontColor=#6B7280;" vertex="1" parent="1">
+          <mxGeometry x="60" y="190" width="280" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="dash_btn_add" value="+ เพิ่มสินค้าใหม่ (F2)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1E40AF;fontColor=#FFFFFF;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="190" width="160" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="table_header" value="รหัสสินค้า       |  ชื่อสินค้า                           |  ชนิดสินค้า   | คงเหลือ | สถานะ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E5E7EB;fontColor=#111827;fontStyle=1;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="60" y="240" width="660" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="table_row1" value="WIRE-01      |  สายไฟทองแดง 2.5 sq.mm   |  📦 กายภาพ  | 12 ม.   | ⚠️ สต็อกต่ำ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E5E7EB;fontColor=#B45309;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="60" y="270" width="660" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="table_row2" value="LIC-WIN       |  Windows 11 Pro License     |  💾 ดิจิทัล   | 45 keys | ✅ ปกติ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F9FAFB;strokeColor=#E5E7EB;fontColor=#15803D;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="60" y="305" width="660" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="table_row3" value="PIPE-02       |  ท่อ PVC ขาว 1 นิ้ว            |  📦 กายภาพ  | 4 เส้น  | ⚠️ สต็อกต่ำ" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#E5E7EB;fontColor=#B45309;align=left;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="60" y="340" width="660" height="35" as="geometry" />
+        </mxCell>
+
+        <!-- SCREEN 2: ADD PRODUCT -->
+        <mxCell id="add_frame" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#111827;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="800" y="40" width="700" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="add_nav" value="  Team 12 Inventory   |   &lt; กลับหน้า Dashboard   |   เพิ่มสินค้าใหม่เข้าคลัง" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1E40AF;fontColor=#FFFFFF;fontStyle=1;align=left;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="800" y="40" width="700" height="40" as="geometry" />
+        </mxCell>
+        <!-- Success Alert -->
+        <mxCell id="add_success" value="✓ บันทึกสินค้า &quot;สายไฟ VCT 2x1.5&quot; สำเร็จเรียบร้อยแล้ว!  [ดูสินค้านี้] [เพิ่มรายการต่อไป]" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DCFCE7;strokeColor=#15803D;fontColor=#15803D;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="95" width="660" height="35" as="geometry" />
+        </mxCell>
+        <!-- Type Selection -->
+        <mxCell id="type_label" value="ชนิดสินค้า (Product Type) *" style="text;html=1;fontStyle=1;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="820" y="140" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="type_phys" value="🔘 สินค้าที่จับต้องได้ (Physical)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EFF6FF;strokeColor=#1E40AF;fontColor=#1E40AF;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="820" y="165" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="type_digi" value="⚪ สินค้าดิจิทัล (Digital Goods)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9CA3AF;fontColor=#4B5563;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="165" width="220" height="30" as="geometry" />
+        </mxCell>
+        <!-- Form Fields -->
+        <mxCell id="f_code_lbl" value="รหัสสินค้า *" style="text;html=1;fontStyle=1;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="820" y="210" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="f_code_val" value=" CAB-02" style="rounded=1;whiteSpace=wrap;html=1;align=left;strokeColor=#9CA3AF;" vertex="1" parent="1">
+          <mxGeometry x="820" y="230" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f_name_lbl" value="ชื่อสินค้า *" style="text;html=1;fontStyle=1;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="210" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="f_name_val" value="" style="rounded=1;whiteSpace=wrap;html=1;align=left;strokeColor=#DC2626;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="230" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f_name_err" value="[!] กรุณาระบุชื่อสินค้า (ห้ามเว้นว่าง)" style="text;html=1;fontColor=#DC2626;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="260" width="250" height="20" as="geometry" />
+        </mxCell>
+        <!-- Stock Details -->
+        <mxCell id="f_qty_lbl" value="จำนวนเริ่มต้น *" style="text;html=1;fontStyle=1;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="820" y="290" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="f_qty_val" value=" 100" style="rounded=1;whiteSpace=wrap;html=1;align=left;strokeColor=#9CA3AF;" vertex="1" parent="1">
+          <mxGeometry x="820" y="310" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f_th_lbl" value="เกณฑ์เตือนสต็อกต่ำ *" style="text;html=1;fontStyle=1;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="980" y="290" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="f_th_val" value=" 15" style="rounded=1;whiteSpace=wrap;html=1;align=left;strokeColor=#9CA3AF;" vertex="1" parent="1">
+          <mxGeometry x="980" y="310" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="f_loc_lbl" value="ตำแหน่งในโกดัง" style="text;html=1;fontStyle=1;fontColor=#111827;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="290" width="120" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="f_loc_val" value=" ชั้นวาง B-03" style="rounded=1;whiteSpace=wrap;html=1;align=left;strokeColor=#9CA3AF;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="310" width="330" height="30" as="geometry" />
+        </mxCell>
+        <!-- Buttons -->
+        <mxCell id="btn_cancel" value="ยกเลิก (Esc)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3F4F6;strokeColor=#D1D5DB;fontColor=#374151;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="440" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="btn_save" value="บันทึกข้อมูลสินค้า (Enter)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1E40AF;strokeColor=#1E40AF;fontColor=#FFFFFF;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="440" width="190" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

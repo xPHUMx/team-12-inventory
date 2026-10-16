@@ -1,0 +1,12 @@
+# Mockup References - Lab 04
+ไฟล์ Mockup ของหน้าจอ Dashboard และ Add Product ถูกบันทึกไว้ในโฟลเดอร์ assets ในรูปแบบไฟล์ Draw.io (XML) ที่สามารถเปิดดูและแก้ไขได้ผ่าน https://app.diagrams.net หรือ VS Code Draw.io Extension:
+
+- ไฟล์ในโปรเจกต์: `assets/inventory-mockups.drawio`
+- หน้าจอที่วาด:
+  1. หน้ากระดานภาพรวม (Dashboard Screen) พร้อมตัวเลขสรุปและตารางระบุชนิดสินค้า (Physical/Digital)
+  2. หน้าเพิ่มสินค้าใหม่ (Add Product Screen) พร้อมสวิตช์เลือกชนิดสินค้า, Validation Error, และ Success Banner
+- ชุดสีที่ใช้ (WCAG AA Compliant):
+  - Primary (ปุ่มหลัก/แถบเมนู): #1E40AF (Contrast 8.5:1 บนพื้นขาว)
+  - Success (สำเร็จ): #15803D (Contrast 4.6:1 บนพื้นขาว)
+  - Warning (เตือนสต็อกต่ำ): #B45309 (Contrast 4.7:1 บนพื้นขาว)
+  - Text (ข้อความหลัก): #111827 (Contrast 16.1:1 บนพื้นขาว)
