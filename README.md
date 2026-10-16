@@ -70,3 +70,24 @@ py -m unittest discover -v
 - **`AI_ITERATION_LOG.md`**: บันทึกการเปรียบเทียบและรอบการ Iterate ปรับปรุง Spec/Context
 - **`diagrams/`**: Mermaid Class Diagram (`class.md`) และ Sequence Diagram (`sequence.md`)
 - **`design_review.md`**: ตารางประเมิน SOLID Design Review 5 ข้อ
+
+---
+
+## 🎨 Lab 4: UX, Code Review และ Debugging โค้ดที่ AI สร้าง
+
+### โครงสร้างไฟล์ของ Lab 4 (`lab04-ai-coding-ux/`):
+- **`findings-lab04.md`**: ผลสัมภาษณ์พนักงานคลัง (Needs, Pain points, Surprises, Point of View)
+- **`persona.md`**: Persona "สมศักดิ์ มั่นคง (น้าศักดิ์)" (Tech literacy 2.5) + User Journey Map 5 ขั้นตอน
+- **`assets/wireframe-ai.md`**: Text Wireframe 3 หน้า (Login, Dashboard, Add Product รองรับทั้งสินค้ากายภาพและดิจิทัล)
+- **`assets/inventory-mockups.drawio`** & **`assets/mockup-link.txt`**: UI Mockup ตามเกณฑ์สี WCAG AA
+- **`accessibility-review.md`**: ตรวจ Accessibility Checklist พร้อมระบุ 2 จุดที่ AI พลาดและแก้ไขเอง
+- **`prompt-vs-context.md`**: บันทึกการเปรียบเทียบ Prompt สั้น vs Prompt ที่มี Context
+- **`code-review.md`**: รีวิวเชิงลึก 4 มิติบน `inventory_service.py` พร้อมตาราง Category & Severity 6 จุด
+- **`debug-log.md`**: บันทึกการ Debug โมดูล `discount.py` แบบ 5 ขั้นตอน
+- **`discount.py`** & **`tests/test_discount.py`**: โค้ดและชุดทดสอบที่ผ่านการแก้ไขแล้ว
+
+### การทดสอบ Lab 4:
+```bash
+cd lab04-ai-coding-ux
+py -m pytest tests/ -v
+```
