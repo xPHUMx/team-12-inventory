@@ -2,6 +2,7 @@
 โมดูล Notification สำหรับส่งการแจ้งเตือนตามหลัก SOLID (OCP, DIP) และ Factory Pattern
 """
 from typing import Protocol, runtime_checkable
+
 from src.models import Product
 
 

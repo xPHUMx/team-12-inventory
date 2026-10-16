@@ -91,3 +91,29 @@ py -m unittest discover -v
 cd lab04-ai-coding-ux
 py -m pytest tests/ -v
 ```
+
+---
+
+## 🧪 Lab 5: TDD, Refactor และ CI/CD (Software Engineering in AI Era)
+
+### โครงสร้างไฟล์ของ Lab 5:
+- **`inventory.py`**: คลาส `Inventory` และ `InventoryItem` พร้อมเมธอด `low_stock_items(threshold)` ที่พัฒนาด้วย TDD (Red-Green-Refactor)
+- **`tests/test_inventory.py`**: ชุดทดสอบ TDD 6 กรณีสำหรับ `low_stock_items` และ Edge Cases ครอบคลุมการขาย (`sell`) และการจัดการสต็อก รวม 20 tests (100% coverage)
+- **`test-gap.md`**: ตารางเปรียบเทียบ 3 คอลัมน์ วิเคราะห์ช่องโหว่ของ Test ที่ AI ให้มา พร้อม 5+ Test Cases ที่เขียนเสริม
+- **`coverage-note.md`**: บันทึกการวิเคราะห์ Code Coverage พร้อมตอบคำถามเชิงลึก 3 ข้อ
+- **`smells.md`**: บันทึก Code Smells 6 จุดจาก `pricing_legacy.py` พร้อมระบุเลขบรรทัดและแนวทางแก้ไข
+- **`tests/test_pricing_legacy.py`**: Characterization Tests 14 ข้อ บันทึกพฤติกรรมเดิมของระบบคิดเงินและส่วนลด (Bulk tiers, Member, Coupons, Points, Logging) พร้อม `autouse` fixture ล้าง global state
+- **`pricing.py`**: โมดูลคิดเงินที่ Refactor ปลอดภัย 100% แยก Single Responsibility, กำจัด Magic Numbers และ Global State
+- **`pyproject.toml`**: กำหนดค่า Ruff linter rules และ Coverage omit paths
+- **`.github/workflows/ci.yml`**: GitHub Actions Workflow ตรวจสอบ Linting (`ruff check`) และ Automated Testing พร้อมเกณฑ์วัดผล Coverage ขั้นต่ำ 85% (`--cov-fail-under=85`)
+- **`screenshots/`**: ภาพบันทึกผลการตรวจสอบ Pull Request Checks ทั้งสถานะผ่าน (`ci-green.png`) และไม่ผ่าน (`ci-red.png`)
+- **`ethics.md`**: บันทึกจริยธรรมยุค AI ครอบคลุม 4 มิติ (Accountability, Licensing, PDPA, Bias) พร้อมแนวปฏิบัติของทีม (195 คำ)
+
+### การทดสอบและรัน CI เชิงโลคอล (Lab 5):
+```bash
+# ตรวจสอบรูปแบบโค้ดด้วย Ruff
+py -m ruff check .
+
+# รันชุดทดสอบพร้อมวัด Coverage ขั้นต่ำ 85%
+py -m pytest tests/ --cov=. --cov-fail-under=85
+```

@@ -1,0 +1,23 @@
+[tool.ruff]
+line-length = 100
+extend-exclude = [
+    "lab04-ai-coding-ux",
+    "pricing_legacy.py",
+    "inventory_lab02_cli.py",
+    "test_inventory_lab02.py",
+    "src",
+    "test_service.py"
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+
+[tool.coverage.run]
+omit = [
+    "inventory_lab02_cli.py",
+    "test_inventory_lab02.py",
+    "pricing_legacy.py",
+    "test_service.py",
+    "src/*",
+    "lab04-ai-coding-ux/*",
+]

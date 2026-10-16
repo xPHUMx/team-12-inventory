@@ -1,11 +1,12 @@
 """
 Unit Tests สำหรับระบบ Inventory System ใน Lab 3 (Spec-Driven Development)
 """
+import sys
 import unittest
 from io import StringIO
-import sys
-from src.models import Product, StockTransaction
-from src.notifiers import NotifierFactory, EmailNotifier, SMSNotifier
+
+from src.models import Product
+from src.notifiers import NotifierFactory
 from src.service import InventoryService
 
 

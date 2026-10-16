@@ -1,5 +1,7 @@
 import datetime
+
 import pytest
+
 import pricing as pl
 
 
@@ -49,7 +51,7 @@ class TestPricingCharacterization:
         assert total == 963.0
 
     def test_bulk_discount_below_threshold_100(self):
-        """ซื้อจำนวน 99 ชิ้น (ยังไม่ถึงเกณฑ์ 100 ได้ลดขั้น 5%): 99 * 10 = 990 * 0.95 = 940.5 + ภาษี 7% = 1006.34"""
+        """ซื้อจำนวน 99 ชิ้น (ยังไม่ถึงเกณฑ์ 100 ได้ลด 5%): 99*10=990 * 0.95 = 940.5 + ภาษี = 1006.34"""
         items = [("ขั้วไฟ", 99, 10.0)]
         total = pl.calc(items)
         assert total == 1006.34

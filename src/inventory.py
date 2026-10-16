@@ -1,8 +1,8 @@
-import os
-import json
-import csv
-import sys
 import argparse
+import csv
+import json
+import os
+import sys
 
 # Ensure standard streams use UTF-8 on Windows
 if sys.version_info >= (3, 7):
@@ -20,7 +20,7 @@ def load_items(filepath=DEFAULT_DB_FILE):
     if not os.path.exists(filepath):
         return []
     try:
-        with open(filepath, "r", encoding="utf-8") as f:
+        with open(filepath, encoding="utf-8") as f:
             data = json.load(f)
             if isinstance(data, list):
                 return data

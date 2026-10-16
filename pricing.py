@@ -3,9 +3,9 @@
 แก้ปัญหา Code Smells จาก pricing_legacy.py โดยแยกฟังก์ชันตามความรับผิดชอบ (SRP),
 กำจัด Magic Numbers และคงพฤติกรรมเดิมไว้ 100%
 """
-from dataclasses import dataclass
 import datetime
-from typing import Sequence
+from collections.abc import Sequence
+from dataclasses import dataclass
 
 # --- ค่าคงที่ระบบ (Named Constants) ---
 TAX_RATE: float = 0.07
@@ -66,7 +66,9 @@ def _apply_member_benefit(subtotal: float, member: str | None) -> float:
     return discounted
 
 
-def _apply_coupon_benefit(subtotal: float, coupon: str | None, today: datetime.date | None) -> float:
+def _apply_coupon_benefit(
+    subtotal: float, coupon: str | None, today: datetime.date | None
+) -> float:
     """ตรวจสอบและคำนวณส่วนลดจากคูปอง (SAVE50, HALF, NEWYEAR)"""
     if coupon is None:
         return subtotal

@@ -1,8 +1,9 @@
 """
 โมดูล Service สำหรับจัดการ Business Logic ของคลังสินค้า (ทำหน้าที่เป็น Subject ใน Observer Pattern)
 """
-from typing import Sequence
 import uuid
+from collections.abc import Sequence
+
 from src.models import Product, StockTransaction
 from src.notifiers import Notifier
 

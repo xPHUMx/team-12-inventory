@@ -3,3 +3,7 @@ __pycache__/
 test_inventory.json
 test_export.csv
 stock.csv
+.coverage
+htmlcov/
+.pytest_cache/
+.ruff_cache/
